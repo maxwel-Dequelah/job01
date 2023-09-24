@@ -92,6 +92,76 @@
       </section>
     </main>
 
+    <!-- User Guide Content -->
+    <div class="container mt-5">
+      <h1>User Guide</h1>
+
+      <h2>Navigating the Application</h2>
+      <p>
+        Welcome to our Event Calendar application! Here's a guide on how to use
+        it:
+      </p>
+      <ul>
+        <li
+          ><strong>Home Page:</strong> You can start by visiting the home page,
+          where you'll find information about the application and a "Get
+          Started" button.</li
+        >
+        <li
+          ><strong>Login:</strong> Click "Get Started" to log in using your
+          Google account. This will redirect you to Google's authentication
+          page.</li
+        >
+        <li
+          ><strong>Google Authentication:</strong> On Google's page, log in with
+          your Google credentials and grant necessary permissions to access your
+          Google Calendar.</li
+        >
+        <li
+          ><strong>Dashboard:</strong> After successful authentication, you'll
+          be redirected to the dashboard. Here, you can:</li
+        >
+        <ul>
+          <li
+            >Create a new calendar event by filling out the form and clicking
+            "Create Event."</li
+          >
+          <li>View and manage your existing calendar events.</li>
+          <li>Log out when you're done using the application.</li>
+        </ul>
+      </ul>
+
+      <h2>How the UI Interacts with the Backend and Google API</h2>
+      <p>
+        Our application interacts with the backend and Google API to create
+        calendar events as follows:
+      </p>
+      <ol>
+        <li
+          >When you click "Create Event" on the dashboard, the UI collects event
+          details (event summary and start time).</li
+        >
+        <li
+          >The UI sends these details to the backend via an HTTP POST request to
+          the `/create-event` route.</li
+        >
+        <li
+          >The backend uses Google API credentials and the stored authentication
+          token to make an authenticated API request to create a calendar event
+          on your Google Calendar.</li
+        >
+        <li
+          >Once the event is created successfully, the backend sends a response
+          to the UI confirming the event's creation.</li
+        >
+      </ol>
+
+      <p>
+        That's it! You can now start using our application to manage your
+        calendar events seamlessly.
+      </p>
+    </div>
+
     <footer class="bg-light text-center py-3" style="margin-top: 30px">
       <p>&copy; 2023 StudyBuddy</p>
     </footer>
