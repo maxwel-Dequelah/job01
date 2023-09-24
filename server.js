@@ -116,8 +116,8 @@ app.get("/dashbord", (req, res) => {
   res.sendFile(path.join(__dirname + "/dashbord.html"));
 });
 
-app.get("//Guide", (req, res) => {
-  res.sendfile(path.join(__dirname + "/userguide.html"));
+app.get("/Guide", (req, res) => {
+  res.sendFile(path.join(__dirname + "/userguide.html"));
 });
 
 app.listen(PORT, () => {
