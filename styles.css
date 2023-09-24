@@ -1,0 +1,49 @@
+/* CSS for hiding the logo on small screens */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    display: none;
+    color: black;
+  }
+  a {
+    color: rgb(117, 108, 241);
+  }
+  .nav {
+    background: #000;
+  }
+  .navbar-toggler-icon {
+    background-color: rgb(38, 164, 236); /* Change to your desired color */
+    border-radius: 20px;
+  }
+  .jumbotron {
+    background-image: url("./timebudddy-logo.png");
+    background-size: cover;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(184, 180, 247);
+    padding: 100px 0;
+  }
+
+  .modal {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+
+  .form-group {
+    text-align: center;
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+}
